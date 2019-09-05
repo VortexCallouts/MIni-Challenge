@@ -3,12 +3,13 @@ import UIKit
 var str = "Hello, playground"
 func check(value: Int)-> String?{
     if(value<=0){
-        return "Vaue is nil"
+        return nil
     }
     else{
-        return "Value is " + String(value)
+        return String(value)
     }
 }
-print(check(value:10))
-print(check(value:0))
-print(check(value: -1))
+
+let numberString1: String? = check(value:5)
+let numberString2: String? = check(value:0)
+let numberString3: String? = check(value:-1)

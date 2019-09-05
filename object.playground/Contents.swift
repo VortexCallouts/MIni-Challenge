@@ -15,8 +15,13 @@ class Dog{
         print("Woof")
     }
     var dogTag: String{
+        
+        get{
             return "If Lost Call " + owner
-    }
+
+        }
+    
+}
 }
 
 let puppy = Dog(name: "Sox",owner: "Davin",age: 5)
